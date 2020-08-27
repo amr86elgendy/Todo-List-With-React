@@ -7,7 +7,7 @@ export default class TodoInput extends Component {
     const { item, handleChange, handleSubmit, editItem } = this.props;
     return (
       <div className="card card-body my-3">
-        <form /* onSubmit={handleSubmit} */>
+        <form onSubmit={handleSubmit}>
           <div className="input-group">
             <div className="input-group-prepend">
               <div
@@ -35,8 +35,7 @@ export default class TodoInput extends Component {
               editItem
                 ? "btn btn-block btn-success mt-3 text-uppercase"
                 : "btn btn-block btn-primary mt-3 text-uppercase"
-            }
-            onClick={handleSubmit} 
+            } 
           >
             {editItem ? "edit item" : "add item"}
           </button>

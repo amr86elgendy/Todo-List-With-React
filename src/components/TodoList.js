@@ -20,7 +20,7 @@ export default class TodoList extends Component {
         })}
         <button
           type="button"
-          disabled={items.length > 1 ? false : true}
+          disabled={items.length ? false : true}
           className="btn btn-danger btn-block text-uppercase mt-5"
           onClick={clearList}
         >
